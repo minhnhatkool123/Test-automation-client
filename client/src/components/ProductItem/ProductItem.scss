@@ -1,0 +1,100 @@
+.product-item-container {
+  width: 25%;
+  height: 380px;
+  border: 1px solid #e3e7ef;
+  .wrap-product-item {
+    width: 85%;
+    margin: auto;
+    cursor: pointer;
+    .top-content {
+      height: 190px;
+      .image-container {
+        position: relative;
+        margin-bottom: 40px;
+        height: 100%;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+        .product-tag {
+          display: flex;
+          position: absolute;
+          bottom: 8px;
+          flex-wrap: wrap;
+          .onsale {
+            display: inline-block;
+            padding: 4px 12px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+            color: #fff;
+            margin-bottom: 4px;
+            background-color: #d53b2a;
+          }
+          .new {
+            display: inline-block;
+            padding: 4px 12px;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 20px;
+            color: #fff;
+            margin-bottom: 4px;
+            background-color: #21a453;
+          }
+          .onsale + .new {
+            margin-left: 6px;
+          }
+        }
+      }
+    }
+    .bottom-content {
+      .product-name {
+        font-size: 18px;
+        overflow: hidden;
+        height: 40px;
+        margin-bottom: 8px;
+        line-height: 20px;
+        font-weight: 600;
+      }
+      .sku-code {
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+      .price {
+        line-height: 28px;
+        font-weight: 600;
+        color: #d53b2a;
+        font-size: 20px;
+      }
+      padding-bottom: 25px;
+      div {
+        padding-top: 4px;
+      }
+      .add-to-cart-btn {
+        display: block;
+        height: 40px;
+        width: 180px;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: #06c1d4;
+        color: white;
+        border-radius: 20px;
+        font-weight: 700;
+        margin: auto;
+        margin-top: 15px;
+        cursor: pointer;
+        &:hover {
+          filter: brightness(1.1);
+        }
+      }
+    }
+
+    .content-more {
+      display: none;
+    }
+  }
+  &:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+}
